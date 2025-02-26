@@ -1,0 +1,83 @@
+/* Pricing Cards */
+.pricing-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.pricing-card {
+    background-color: #161b22;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid transparent;
+    width: 30%;
+    text-align: center;
+}
+
+    .pricing-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 12px 30px rgba(255, 0, 255, 0.2);
+        border-color: magenta;
+    }
+
+    .pricing-card h3 {
+        font-size: 28px;
+        color: cyan;
+        margin-bottom: 10px;
+    }
+
+.price {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.pricing-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+}
+
+    .pricing-card ul li {
+        margin: 10px 0;
+        font-size: 16px;
+        opacity: 0.8;
+    }
+
+
+    .featured {
+        border-color: cyan;
+        transform: scale(1.05);
+    }
+    
+    /* Button Styling */
+    .btn-primary {
+        background-color: magenta;
+        color: #0d1117;
+        text-decoration: none;
+        padding: 15px 30px;
+        border-radius: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        display: inline-block;
+    }
+    
+        .btn-primary:hover {
+            background-color: white;
+            color: magenta;
+        }
+
+        
+
+
+        .precio-fondo{
+            background: rgba(0, 0, 0, 0.5);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+        }

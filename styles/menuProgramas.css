@@ -1,0 +1,80 @@
+        /* Contenedor de la franja */
+        .logo-slider {
+            width: 100%; /* La mitad de la pantalla */
+            margin: auto; /* Centrar */
+            overflow: hidden;
+
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            position: relative;
+
+            height: 80px; /* Ajusta la altura según necesites */
+
+            border-bottom: 1px solid silver;
+            border-top: 1px solid silver;
+
+
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Contenedor de los logos */
+        .logos {
+            display: flex;
+            align-items: center;
+            gap: 20px; /* Espacio entre logos */
+            position: absolute;
+            white-space: nowrap;
+        }
+
+        /* Logos individuales */
+        .logos img {
+            height: 100%; /* Ajusta la altura de las imágenes al contenedor */
+            max-height: 40px; /* Máximo tamaño para evitar que sean muy grandes */
+            width: auto; /* Mantener la proporción */
+        }
+
+                /* BOTON DEL LADO DERECHO */
+                .btn-menuProd {
+                    background-color:transparent; 
+                    color: cyan;
+                    border-color:cyan;
+                    border-radius: 5px;
+                }
+            
+                .btn-menuProd:hover {
+                    background-color:white;
+                    color: black;
+                    border-color:cyan;
+                    
+                }
+
+                .menuProgramas {
+
+                    border: 2px solid fuchsia;
+                }
+
+                .card-flotante{
+                    position: absolute;
+                    bottom: 5%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                    width: 75%;
+                    background: rgba(30, 35, 45, 1);
+                    border-radius: 10px;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+                    border: 1px solid fuchsia;
+                    
+                    padding: 10px;
+                    text-align: center;
+                }
+
+                .card-contenedor{
+                    position: relative;
+
+                }

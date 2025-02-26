@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/menuProgramas.css">
+    <link rel="stylesheet" href="styles/tv.css">
+    <link rel="stylesheet" href="styles/precios.css">
+    <title>Precios</title>
+</head>
+<body>
+    <div class="sphere cyan"></div>
+    <div class="sphere magenta"></div>
+
+    <nav class="navbar css-nav navbar-expand-lg mb-5">
+        <div class="container-fluid">
+
+
+<div class="bg-body-link">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">
+      <img src="imagenes/logo.png" alt="Logo" width="50" height="24" class="d-inline-block align-text-top">
+      PositionSafe
+    </a>
+  </div>
+</div>
+    
+            <!-- empuja al centro-->
+            <div class="align-items-center">
+                <ul class="navbar-nav p-4 nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link css-item fs-5" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link  css-item fs-5" href="#" data-bs-toggle="dropdown" aria-expanded="false">Indicadores ▼</a>
+                      <ul class="dropdown-menu text-center css-fondoOscuro">
+                        <li><a class="dropdown-item css-item" href="#">Book-Capture</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Trade-Capture</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Headmap-Liquidations</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Headmap-Liquidity</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Strategy-Revers</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Strategy-Scalping</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link css-item fs-5" href="#">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link css-item fs-5" href="#">Contacto</a>
+                  </li>
+                  </ul>
+            </div>
+            
+
+
+            <div class="justify-content-end">
+              <a class="btn btn-Contacto  fs-6" href="#">Crear cuenta</a>
+              <a class="btn btn-Registro  fs-6" href="#">Iniciar sesión</a>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- PLANES PRECIOS -->
+<section class="pricing" id="pricing">
+    <h2>Nuestros Planes</h2>
+    <p class="pricing-description">Elige el plan que más se adapte a tus necesidades y comienza a mejorar tu trading hoy.</p>
+    <div class="pricing-container">
+        <!-- Free Plan -->
+        <div class="pricing-card">
+            <h3>Gratis</h3>
+            <p class="price">$0 / mes</p>
+            <ul>
+                <li>Acceso básico al indicador</li>
+                <li>Datos retrasados 10 min</li>
+                <li>Soporte limitado</li>
+            </ul>
+            <a href="#" class="btn-primary">Comenzar Gratis</a>
+        </div>
+
+        <!-- Normal Plan -->
+        <div class="pricing-card featured">
+            <h3>Normal</h3>
+            <p class="price">$29 / mes</p>
+            <ul>
+                <li>Indicador en tiempo real</li>
+                <li>Acceso a datos de nivel 2</li>
+                <li>Soporte estándar</li>
+            </ul>
+            <a href="#" class="btn-primary">Elegir Plan</a>
+        </div>
+
+        <!-- Premium Plan -->
+        <div class="pricing-card">
+            <h3>Premium</h3>
+            <p class="price">$79 / mes</p>
+            <ul>
+                <li>Indicador con datos avanzados</li>
+                <li>Acceso a datos de nivel 3</li>
+                <li>Soporte prioritario 24/7</li>
+            </ul>
+            <a href="#" class="btn-primary">Elegir Plan</a>
+        </div>
+    </div>
+</section>
+
+
+
+<main class="container">
+            <!-- PRECIOS -->
+    <div class="row row-cols-1 row-cols-md-3 mb-5 text-center">
+      <div class="col carPrecios">
+        <div class="card mb-4 rounded-3 shadow-sm precio-fondo">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Gratis</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$0<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-outline-primary">Sign up for free</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm precio-fondo">
+          <div class="card-header py-3">
+            <h4 class="my-0 fw-normal">Pro</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$15<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Get started</button>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card mb-4 rounded-3 shadow-sm border-primary precio-fondo">
+          <div class="card-header py-3 text-bg-primary border-primary">
+            <h4 class="my-0 fw-normal">PREMIUM</h4>
+          </div>
+          <div class="card-body">
+            <h1 class="card-title pricing-card-title">$29<small class="text-body-secondary fw-light">/mo</small></h1>
+            <ul class="list-unstyled mt-3 mb-4">
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+              <li>-</li>
+            </ul>
+            <button type="button" class="w-100 btn btn-lg btn-primary">Contact us</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="display-6 text-center mb-4">Compare plans</h2>
+
+    <div class="table-responsive">
+      <table class="table text-center">
+        <thead>
+          <tr>
+            <th style="width: 34%;"></th>
+            <th style="width: 22%;">Free</th>
+            <th style="width: 22%;">Pro</th>
+            <th style="width: 22%;">Enterprise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Public</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Private</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+        </tbody>
+
+        <tbody>
+          <tr>
+            <th scope="row" class="text-start">Permissions</th>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Sharing</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Unlimited members</th>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+          <tr>
+            <th scope="row" class="text-start">Extra security</th>
+            <td></td>
+            <td></td>
+            <td><svg class="bi" width="24" height="24"><use xlink:href="#check"/></svg></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+
+    <footer class="text-white text-center py-3 css-fondoCard">
+        &copy; 2025 Mi Sitio Web. Todos los derechos reservados.
+    </footer>
+</body>
+</html>

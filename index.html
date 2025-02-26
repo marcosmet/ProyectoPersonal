@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/navBar.css">
+    <link rel="stylesheet" href="styles/hero.css">
+    <link rel="stylesheet" href="styles/menuProgramas.css">
+    <link rel="stylesheet" href="styles/tv.css">
+    <style>
+
+
+.css-TituloSlider{
+
+  background-color: #0d1117;
+}
+.css-TituloSlider h1{
+
+    text-shadow: 
+      -1px -1px 0 fuchsia,  
+       1px -1px 0 fuchsia,  
+      -1px  1px 0 fuchsia,  
+       1px  1px 0 fuchsia;  
+    color: black;
+}
+
+.css-TituloSlider h5{
+color: white;
+
+}
+
+
+
+
+
+.css-transparencia{
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.css-cyan{
+    color: cyan;
+}
+.css-fuchsia{
+    color: fuchsia;
+}
+
+.css-fondoCard{
+    background-color: rgb(30, 35, 45);
+}
+
+.css-radio{
+    border-radius: 2rem
+}
+
+
+
+
+#imagen {
+            transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+            opacity: 1;
+            position: relative;
+        }
+        .glitch {
+            animation: glitch 0.3s linear 2;
+            opacity: 0;
+        }
+        @keyframes glitch {
+            0% { transform: translate(1px, -1px) skewX(5deg); filter: hue-rotate(10deg); opacity: 0; }
+            25% { transform: translate(-2px, 2px) skewX(-5deg); filter: hue-rotate(-10deg); opacity: 0.4; }
+            50% { transform: translate(2px, -2px) skewX(3deg); filter: hue-rotate(15deg); opacity: 0.6; }
+            75% { transform: translate(-2px, 2px) skewX(-3deg); filter: hue-rotate(-15deg); opacity: 0.8; }
+            100% { transform: translate(0, 0) skewX(0); filter: hue-rotate(0); opacity: 1; }
+        }
+    </style>
+</head>
+
+
+
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <div class="sphere cyan"></div>
+    <div class="sphere magenta"></div>
+
+
+    <nav class="navbar css-nav navbar-expand-lg mb-5">
+        <div class="container-fluid">
+
+
+<div class="bg-body-link">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white" href="#">
+      <img src="imagenes/logo.png" alt="Logo" width="50" height="24" class="d-inline-block align-text-top">
+      PositionSafe
+    </a>
+  </div>
+</div>
+    
+            <!-- empuja al centro-->
+            <div class="align-items-center">
+                <ul class="navbar-nav p-4 nav-links">
+                    <li class="nav-item">
+                        <a class="nav-link css-item fs-5" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item dropdown ">
+                      <a class="nav-link  css-item fs-5" href="#" data-bs-toggle="dropdown" aria-expanded="false">Indicadores ▼</a>
+                      <ul class="dropdown-menu text-center css-fondoOscuro">
+                        <li><a class="dropdown-item css-item" href="#">Book-Capture</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Trade-Capture</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Headmap-Liquidations</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Headmap-Liquidity</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Strategy-Revers</a></li>
+                        <li><a class="dropdown-item css-item" href="#">Strategy-Scalping</a></li>
+                      </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link css-item fs-5" href="#">Precios</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link css-item fs-5" href="#">Contacto</a>
+                  </li>
+                  </ul>
+            </div>
+            
+
+
+            <div class="justify-content-end">
+              <a class="btn btn-Contacto  fs-6" href="#">Crear cuenta</a>
+              <a class="btn btn-Registro  fs-6" href="#">Iniciar sesión</a>
+          </div>
+        </div>
+    </nav>
+
+    <div class="position-relative overflow-hidden p-md-5 m-md-3 text-center hero-fondo">
+      <div class="col-md-6 p-lg-5 mx-auto my-5 float-start ">
+        <h1 class="display-3 fw-bold hero-titulo">
+          Tu Futuro en el Trading <span class="css-cyan">Empieza hoy</span></h1>
+        <h5 class="fw-normal  mb-3 hero-subtitulo">Si realmente quieres dedicarte al trading, hazlo como los profesionales.</h5>
+        <h5 class="fw-normal mb-3 hero-subtitulo">Nuestras herramientas te permitirán leer el mercado como un experto desde el primer día.</h5>
+        <div class="d-flex gap-3 justify-content-center lead fw-normal">
+          <a class="icon-link" href="#">
+            Aprende mas
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+          <a class="icon-link" href="#">
+            Comprar
+            <svg class="bi"><use xlink:href="#chevron-right"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="col-md-6 produc">
+    <div class="posicionTablet">
+        <div class="AnimacionBurbuja">
+            <!-- Tablet con GIF -->
+            <div class="tablet-container">
+                <div class="contenido-imagen"></div>
+            </div>
+        </div>
+    </div>
+
+      </div>
+
+    </div>
+
+
+
+  <div class="container mt-5 mb-5 ">
+
+    <div class="row">
+      <h5 class="text-light">Nuestros colaboradores</h5>
+
+    <div class="row">
+
+      <div class="logo-slider">
+        <div class="logos ms-5">
+            <img src="imagenes/logo-bitfinex.png" alt="Logo 1">
+            <img src="imagenes/logo-binance-f.png" alt="Logo 2">
+            <img src="imagenes/logo-bybit.png" alt="Logo 3">
+            <img src="imagenes/logo-coingeko.png" alt="Logo 4">
+            <img src="imagenes/logo-coinbase.png" alt="Logo 5">
+            <img src="imagenes/logo-binance.png" alt="Logo 6">
+            <img src="imagenes/logo-kucoin.png" alt="Logo 7">
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const logosContainer = document.querySelector(".logos");
+            const logos = document.querySelectorAll(".logos img");
+            const containerWidth = document.querySelector(".logo-slider").offsetWidth;
+            let totalWidth = 0;
+
+            // Calcular el ancho total de los logos sumando sus anchos
+            logos.forEach(logo => {
+                totalWidth += logo.offsetWidth + 40; // 20px es el espacio entre logos
+            });
+
+            // Duplicar los logos si el ancho total es menor que el contenedor
+            while (totalWidth < containerWidth * 2) {
+                logos.forEach(logo => {
+                    const clone = logo.cloneNode(true);
+                    logosContainer.appendChild(clone);
+                });
+                totalWidth *= 2;
+            }
+
+            // Animación de desplazamiento infinito
+            function animateLogos() {
+                let position = 0;
+
+                function move() {
+                    position -= 1; // Velocidad del movimiento
+                    logosContainer.style.transform = `translateX(${position}px)`;
+
+                    if (Math.abs(position) >= totalWidth / 2) {
+                        position = 0; // Reinicia la posición para efecto infinito
+                    }
+
+                    requestAnimationFrame(move);
+                }
+
+                move();
+            }
+
+            animateLogos();
+        });
+</script>
+
+  <div class="container mt-5 mb-5 css-fondoCard">
+    <div class="row text-light mt-5 mb-5 text-center">
+      <h2 class="p-3" style="border-bottom:  1px solid cyan; border-top: 1PX solid cyan;" >NUESTRO CATALOGO DE PRODUCTOS</h2>
+    <div class="row">
+        <!-- Columna de botones -->
+        <div class="col-md-2">
+            <div class="d-grid gap-2 text-center align-items-center pt-3">
+
+                <button class="btn btn-menuProd" onclick="cambiarImagen(
+                'imagenes/img2.png', 
+                'Book-Capture', 
+                'Observa el mercado como si tuvieras una visión de rayos X.', 
+                'Book-Capture te muestra en tiempo real dónde están las órdenes más grandes y quién mueve los hilos del mercado. Deja de adivinar y empieza a ver lo invisible.')">Book-Capture</button>
+                <button class="btn btn-menuProd" onclick="cambiarImagen(
+                  'imagenes/gifTradeCapture.gif', 
+                  'Trade-Capture',
+                  '¿Quien compro? ¿Quien vendio?',
+                  'rade-Capture registra cada orden ejecutada y la transforma en inteligencia visual. Detecta acumulaciones, analiza volúmenes y descubre los puntos críticos donde los grandes jugadores entran al mercado. ')">Trade-Capture</button>
+                <button class="btn btn-menuProd" onclick="cambiarImagen(
+                  'imagenes/headmap-liquidations.png', 
+                  'Headmap-Liquidations',
+                  'Cada liquidación deja un rastro… y Liquidation Map lo ilumina.',
+                  'Observa dónde el mercado fuerza a los traders a salir y usa esa información para anticipar los próximos movimientos.')">Headmap-Liquidations</button>
+                <button class="btn btn-menuProd" onclick="cambiarImagen(
+                  'imagenes/headmap-liquidity.png', 
+                'Headmap-Liquidity',
+                '¿Dónde están los grandes jugadores del mercado?',
+                'Headmap-Liquidity te da acceso a una nueva dimensión del mercado. Clasifica y analiza cada orden según su tamaño, mostrando las zonas donde los grandes actores se posicionan, y separando las operaciones de retail de las de los profesionales. ',)">Headmap-Liquidity</button>
+                <button class="btn btn-menuProd" onclick="cambiarImagen(
+                  'imagenes/estrategy-revers.png', 
+                  'Strategy-Revers', 
+                  'Elimina las dudas y opera con precisión.',
+                  'Strategy Revers utiliza el volumen y Fibonacci para proporcionarte las mejores posiciones de compra y venta. ¡No más interpretación ni sesgos! El indicador te da el punto exacto para abrir y cerrar tu operación, dejándote solo la tarea de ejecutar.')">Strategy-Revers</button>
+                <button class="btn btn-menuProd" onclick="cambiarImagen(
+                  'imagenes/programa6.png', 
+                  'Strategy-Scalping', 
+                  'Escoge Tu Entrada Perfecta con IA ', 
+                  'Con Strategy Scalping, el scalping nunca fue tan preciso. Usando inteligencia artificial, analiza las posiciones más grandes en el libro de órdenes y la liquidez del mercado para ofrecerte las entradas más inteligentes.Empieza a operar con la certeza de que tienes los datos más avanzados. Domina el scalping.')">Strategy-Scalping</button>
+            </div>
+        </div>
+        <!-- Columna de imagen -->
+        <div class="col-md-10 d-flex justify-content-center align-items-center p-3 card-contenedor">
+            <img id="imagen" src="imagenes/img2.png" class="img-fluid" alt="Imagen seleccionada">
+        <div class="card-flotante" >
+          <h2 id="titulo" class="mb-2 css-fuchsia"> Book-Capture </h2>
+          <h4 id="subtitulo" class="mb-2 css-cyan"> Observa el mercado como si tuvieras una visión de rayos X. </h4>
+          <p id="descripcion" class="mb-0"> Book-Capture te muestra en tiempo real dónde están las órdenes más 
+            grandes y quién mueve los hilos del mercado. Deja de adivinar y empieza a ver lo invisible.</p>
+
+        </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  function cambiarImagen(ruta, varTitulo, varSubtitulo, varDescripcion) {
+      let img = document.getElementById("imagen");
+      document.getElementById('titulo').innerText = varTitulo;
+      document.getElementById('subtitulo').innerText = varSubtitulo;
+      document.getElementById('descripcion').innerText = varDescripcion;
+
+      img.classList.add("glitch");
+      setTimeout(() => {
+          img.src = ruta;
+          img.onload = () => img.classList.remove("glitch");
+      }, 500);
+  }
+</script>
+
+
+<section class="diagonal-section">
+  <div class="card custom-card">
+      <div class="card-body">
+        <h1 class="card-title css-cyan text-center">NUEVO PARADIGMA</h1>
+        <h4 class="card-subtitle mb-2 css-fuchsia text-center">Nacen nuevas tecnologias, y con ellas, formas mas seguras y rentables de hacer trading. </h4>
+        <p class="card-text text-center text-white">A diferencia de indicadores tradicionales como el DMI o RSI, que ofrecen un análisis indirecto del precio, nuestros indicadores se alimentan en tiempo real de las transacciones y del flujo continuo del libro de órdenes. Al trabajar directamente con órdenes de compra y venta, dejamos atrás la especulación y nos enfocamos en lo que realmente está ocurriendo en el mercado</p>
+      </div>
+  </div>
+</section>
+    <div class= "d-flex justify-content-center css-transparencia">
+    <div class="card w-75 h-200 css-transparencia my-5" >
+        <div class="row g-0">
+          <div class="col-md-8">
+            <img src="imagenes/img1.png" class="img-fluid rounded-start" alt="...">
+          </div>
+          <div class="col-md-4">
+            <div class="card-body">
+              <h1 class="card-title css-cyan text-center">Liquidaciones y Mapas de Calor</h1>
+                <p class="card-text"><small class="text-body-secondary"></small></p>
+              <p class="card-text text-white text-center">Visualiza las liquidaciones del mercado en múltiples temporalidades, desde 12 horas hasta una semana, todo en un único gráfico. Con nuestro avanzado sistema de mapas de calor, puedes identificar rápidamente las zonas de alta actividad y comprender cómo las liquidaciones impactan el precio. Olvídate de consultar varios gráficos: toda la información está consolidada y lista para que tomes decisiones estratégicas."</p>
+              <p class="card-text"><small class="text-body-secondary"></small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="contenedor-hero1">
+      <div class="hero1">
+        <div class="mensaje1">
+          <h1>Descubre nuestras imágenes impresionantes</h1>
+          <p>Explora nuestra colección en constante cambio, ¡cambia tu perspectiva con solo un clic!</p>
+        </div>
+      <div class="AnimacionBurbuja">
+        <div class="tablet1">
+          <div class="contenido-imagen1">
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+
+
+    <div class= "d-flex justify-content-center css-transparencia">
+        <div class="card w-75 h-200 css-transparencia my-5" >
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <div class="card-body">
+                      <h1 class="card-title css-cyan text-center">Order Flow Imbalance</h1>
+                        <p class="card-text"><small class="text-body-secondary"></small></p>
+                      <p class="card-text text-white text-center">Nuestros indicadores muestran los imbalances entre la oferta y la demanda, permitiendo identificar áreas del mercado donde las fuerzas de compra o venta se inclinan significativamente a favor de un lado.</p>
+                      <p class="card-text"><small class="text-body-secondary"></small></p>
+                      <p class="card-text text-white text-center">La capacidad de visualizar estos desequilibrios en tiempo real ofrece una ventaja estratégica: revela niveles críticos donde es probable que ocurran cambios de tendencia, puntos de entrada o salida ideales, y brinda una lectura más precisa del flujo institucional. Con esta información, puedes anticipar movimientos clave antes de que se reflejen en el precio.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-8">
+                    <img src="imagenes/img2.png" class="img-fluid rounded-start" alt="...">
+                  </div>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="container mt-5">
+          <h1 class="text-center">Formulario de Registro</h1>
+          <form class="mt-4">
+            <div class="row g-3">
+              <div class="col-md-6">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+              </div>
+              <div class="col-md-6">
+                  <label for="apellido" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="apellido" placeholder="Apellido">
+              </div>
+          </div>
+          <div class="mb-3 mt-3">
+              <label for="email" class="form-label">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+          </div>
+          <div class="mb-3">
+              <label for="password" class="form-label">Contraseña</label>
+              <input type="password" class="form-control" id="password" placeholder="Contraseña">
+          </div>
+          <div class="mb-3">
+              <label for="pais" class="form-label">País</label>
+              <select class="form-select" id="pais">
+                  <option selected>Selecciona tu país</option>
+                  <option value="1">México</option>
+                  <option value="2">Argentina</option>
+                  <option value="3">España</option>
+              </select>
+          </div>
+          <div class="form-check mb-3">
+              <input class="form-check-input" type="checkbox" id="terminos">
+              <label class="form-check-label" for="terminos">Acepto los términos y condiciones</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Registrarse</button>
+      </form>
+  </div>
+
+  <div class="card-3d">
+    <div class="content">
+        <h3>Título</h3>
+        <p>Esta card se inclina al pasar el mouse.</p>
+    </div>
+</div>
+
+<div class="expand-card">
+  <h3>Título</h3>
+  <p>Al pasar el mouse, la card se expande con un efecto fluido.</p>
+</div>
+
+
+
+        <footer class="text-white text-center py-3 css-fondoCard">
+            &copy; 2025 Mi Sitio Web. Todos los derechos reservados.
+        </footer>
+      
+</body>
+</html>
